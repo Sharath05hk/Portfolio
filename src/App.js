@@ -175,7 +175,7 @@ const About = () => (
       <div className="about-content">
         <div className="about-image-container">
           <div className="about-image">
-            <img src="https://placehold.co/400x400/111/fff?text=Profile" alt="Sharath Raj H K portrait" />
+            <img src="/profile_pic.png" alt="Sharath Raj H K portrait" />
           </div>
         </div>
         <div className="about-text-content">
