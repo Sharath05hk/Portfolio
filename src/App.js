@@ -157,7 +157,7 @@ const Hero = () => {
           <span className="blinking-cursor"></span>
         </h3>
         <p className="hero-description">
-          I build beautiful, responsive, and innovative web applications. Let's create something amazing together.
+          I believe every line of code is an opportunity to innovate, solve real-world challenges, and create meaningful digital experiences.
         </p>
         <div className="hero-buttons">
           <a href="#contact" className="btn btn-primary">Get In Touch</a>
@@ -175,18 +175,16 @@ const About = () => (
       <div className="about-content">
         <div className="about-image-container">
           <div className="about-image">
-            <img src="/portfolio_pic1.pdf" alt="Sharath Raj H K portrait" />
+            <img src="/portfolio_pic1.png" alt="Sharath Raj H K portrait" />
           </div>
         </div>
         <div className="about-text-content">
-          <h3>Crafting Digital Experiences</h3>
+          <h3>Transforming Ideas into Code</h3>
           <p>
-            I'm a passionate Full Stack developer with a knack for creating dynamic and user-friendly web applications.
-            With a strong foundation in front-end technologies and a keen eye for design, I build products that are both functional and delightful.
+            I enjoy turning ideas into practical and user-friendly web applications. As a Full Stack Developer, I focus on building projects that are not only functional but also easy and enjoyable to use.
           </p>
           <p>
-            My journey started with a simple "Hello, World!" and grew into a love for building innovative solutions.
-            I’m always learning and exploring new tech to push what’s possible on the web.
+            My journey started with simple curiosity about how things work on the web, and over time it grew into a real passion for creating useful solutions. For me, technology isn’t just about writing code — it’s about solving problems and making things better for people.
           </p>
           <div className="about-social-links">
             <a aria-label="GitHub" href="https://github.com/Sharath05hk"><GithubIcon /></a>
@@ -228,7 +226,7 @@ const Skills = () => {
   );
 };
 
-const ProjectCard = ({ title, description, imageUrl, tags, liveUrl, codeUrl }) => (
+const ProjectCard = ({ title, description, imageUrl, tags, codeUrl }) => (
   <div className="project-card">
     <img src={imageUrl} alt={title} />
     <div className="project-content">
@@ -240,9 +238,13 @@ const ProjectCard = ({ title, description, imageUrl, tags, liveUrl, codeUrl }) =
         ))}
       </div>
       <div className="project-links">
-        <a href={liveUrl} target="_blank" rel="noopener noreferrer" className="live">View Live</a>
-        <a href={codeUrl} target="_blank" rel="noopener noreferrer" className="code" aria-label="View code on GitHub">
-          <GithubIcon />
+        <a 
+          href={codeUrl} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="live"
+        >
+          View SourceCode
         </a>
       </div>
     </div>
@@ -256,7 +258,6 @@ const Projects = () => {
       description: 'A full-featured e-commerce site with product listings, cart, and checkout functionality.',
       imageUrl: 'https://placehold.co/600x400/805AD5/ffffff?text=MiniMart',
       tags: ['React', 'Spring Boot', 'PostgreSQL', 'Docker'],
-      liveUrl: '#',
       codeUrl: 'https://github.com/Sharath05hk/Minimart',
     },
     {
@@ -264,15 +265,13 @@ const Projects = () => {
       description: 'A Multi-Modal System for Hands-Free Computer Control',
       imageUrl: 'https://placehold.co/600x400/3182CE/ffffff?text=Neuro+Nav',
       tags: ['React', 'Python', 'CNN Model', 'OpenCV', 'Mediapipe', 'pyautogui'],
-      liveUrl: '#',
       codeUrl: 'https://github.com/Sharath05hk/Neuro-Nav',
     },
     {
       title: 'Budget Tracker',
-      description: 'Intuitive Platform for Budgeting and Financial Planning).',
-      imageUrl: 'https://placehold.co/600x400/D53F8C/ffffff?text=Portfolio',
+      description: 'Intuitive Platform for Budgeting and Financial Planning.',
+      imageUrl: 'https://placehold.co/600x400/D53F8C/ffffff?text=Budget+Tracker',
       tags: ['React', 'TypeScript'],
-      liveUrl: '#',
       codeUrl: 'https://github.com/Sharath05hk/Budget_Tracker',
     },
   ];
@@ -427,21 +426,30 @@ const Certificates = () => {
       title: "Responsive Web Design",
       provider: "freeCodeCamp",
       link: "#",
-      imageUrl: "https://placehold.co/400x250/2d3748/fff?text=RWD+Cert",
+      imageUrl: "https://placehold.co/400x250/2d3748/fff?text=Java+Cert",
+      href: "/freecodecamp_webdesign.pdf",
     },
     {
       title: "Software Engineering and Agile software development",
       provider: "Infosys Springboard",
       link: "#",
-      imageUrl: "/Infosys_Agile.pdf",
+      imageUrl: "https://placehold.co/400x250/2d3748/fff?text=Agile+Cert",
+      href: "/Infosys_Agile.pdf",
     },
     {
-      title: " ECommerce & Tech Quiz of the Flipkart GRiD 6.0 - Software Development",
+      title: "ECommerce & Tech Quiz of the Flipkart GRiD 6.0 - Software Development",
       provider: "Flipkart",
       link: "#",
-      imageUrl: "/Sharathflipkart.pdf",
+      imageUrl: "https://placehold.co/400x250/2d3748/fff?text=Flipkart+Cert",
+      href: "/Sharathflipkart.pdf",
     },
-
+    {
+      title: "Programming Fundamentals using Python",
+      provider: "Infosys Springboard",
+      link: "#",
+      imageUrl: "https://placehold.co/400x250/2d3748/fff?text=Python+Cert",
+      href: "/Python.pdf",
+    },
   ];
 
   return (
@@ -451,11 +459,19 @@ const Certificates = () => {
         <div className="certificates-grid">
           {certificates.map((cert) => (
             <div key={cert.title} className="card">
-              <img src={cert.imageUrl} alt={cert.title}
-                   style={{ width: '100%', borderRadius: '0.5rem', marginBottom: '1rem' }} />
+              <img
+                src={cert.imageUrl}
+                alt={cert.title}
+                style={{ width: "100%", borderRadius: "0.5rem", marginBottom: "1rem" }}
+              />
               <h3 className="card-title">{cert.title}</h3>
               <h4 className="card-subtitle">Issued by {cert.provider}</h4>
-              <a href={cert.link} target="_blank" rel="noopener noreferrer" className="card-link">
+              <a
+                href={cert.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="card-link"
+              >
                 View Certificate
               </a>
             </div>
