@@ -181,7 +181,7 @@ const About = () => (
         <div className="about-text-content">
           <h3>Transforming Ideas into Code</h3>
           <p>
-            I enjoy turning ideas into practical and user-friendly web applications. As a Full Stack Developer, I focus on building projects that are not only functional but also easy and enjoyable to use.
+            I Enjoy turning ideas into practical and user-friendly web applications. As a Full Stack Developer, I focus on building projects that are not only functional but also easy and enjoyable to use.
           </p>
           <p>
             My journey started with simple curiosity about how things work on the web, and over time it grew into a real passion for creating useful solutions. For me, technology isn’t just about writing code — it’s about solving problems and making things better for people.
@@ -423,11 +423,11 @@ const Internship = () => {
 const Certificates = () => {
   const certificates = [
     {
-      title: "Responsive Web Design",
-      provider: "freeCodeCamp",
+      title: "Java Programming for Beginners",
+      provider: "Simpli Learn",
       link: "#",
       imageUrl: "https://placehold.co/400x250/2d3748/fff?text=Java+Cert",
-      href: "/freecodecamp_webdesign.pdf",
+      href: "/Java_certificate_Simpli_Learn.pdf",
     },
     {
       title: "Software Engineering and Agile software development",

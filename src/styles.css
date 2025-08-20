@@ -250,12 +250,11 @@ a:hover { color: var(--accent-color); }
 /*
   * Education, Internship, Certificates
 */
-.education-section, .internship-section, .certificates-section {
+.education-section, .internship-section {
   padding: 6rem 0; background-color: #1a202c;
 }
 .education-section { background-color: #0d1117; }
 .internship-section { background-color: #111827; }
-.certificates-section { background-color: #0d1117; }
 
 .section-container { max-width: 1200px; margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; }
 
@@ -276,7 +275,67 @@ a:hover { color: var(--accent-color); }
 }
 .card-link:hover { color: var(--accent-color); }
 
-.certificates-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* default: 1 per row (mobile) */
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .certificates-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row (tablet/desktop) */
+  }
+}
+
+.certificate-card {
+  max-width: 100%; 
+  width: 10px;
+  height: 10px;      
+  padding: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  margin: auto;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.certificate-card:hover {
+  transform: scale(1.03);
+}
+
+.certificate-img {
+  width: 100%;
+  height: 150px;          
+  object-fit: cover;      
+  border-radius: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+.card-subtitle {
+  font-size: 1rem;
+  color: #fdfeff;
+  margin-bottom: 0.75rem;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #3182CE;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
 
 /*
   * Resume Section
