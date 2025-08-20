@@ -175,7 +175,7 @@ const About = () => (
       <div className="about-content">
         <div className="about-image-container">
           <div className="about-image">
-            <img src="profile_pic.png" alt="Sharath Raj H K portrait" />
+            <img src="/portfolio_pic1.pdf" alt="Sharath Raj H K portrait" />
           </div>
         </div>
         <div className="about-text-content">
@@ -201,14 +201,12 @@ const About = () => (
 
 const Skills = () => {
   const skills = [
-    { name: 'React', level: 95 },
-    { name: 'JavaScript', level: 90 },
-    { name: 'Tailwind CSS', level: 98 },
+    { name: 'React', level: 75 },
+    { name: 'MongoDB', level: 90 },
+    { name: 'SpringBoot', level: 85 },
     { name: 'Node.js', level: 80 },
-    { name: 'Figma', level: 85 },
-    { name: 'Next.js', level: 75 },
-    { name: 'TypeScript', level: 80 },
-    { name: 'GraphQL', level: 70 },
+    { name: 'MySQL', level: 85 },
+    { name: 'TypeScript', level: 60 },
   ];
 
   return (
@@ -265,17 +263,17 @@ const Projects = () => {
       title: 'Neuro Nav',
       description: 'A Multi-Modal System for Hands-Free Computer Control',
       imageUrl: 'https://placehold.co/600x400/3182CE/ffffff?text=Neuro+Nav',
-      tags: ['React', 'Python', 'CNN Model'],
+      tags: ['React', 'Python', 'CNN Model', 'OpenCV', 'Mediapipe', 'pyautogui'],
       liveUrl: '#',
       codeUrl: 'https://github.com/Sharath05hk/Neuro-Nav',
     },
     {
-      title: 'Portfolio Website',
-      description: 'A personal portfolio to showcase my skills and projects (the one you are looking at!).',
+      title: 'Budget Tracker',
+      description: 'Intuitive Platform for Budgeting and Financial Planning).',
       imageUrl: 'https://placehold.co/600x400/D53F8C/ffffff?text=Portfolio',
-      tags: ['React', 'Framer Motion', 'Vercel'],
+      tags: ['React', 'TypeScript'],
       liveUrl: '#',
-      codeUrl: '#',
+      codeUrl: 'https://github.com/Sharath05hk/Budget_Tracker',
     },
   ];
 
@@ -426,23 +424,24 @@ const Internship = () => {
 const Certificates = () => {
   const certificates = [
     {
-      title: "React - The Complete Guide",
-      provider: "Udemy",
-      link: "#",
-      imageUrl: "https://placehold.co/400x250/2d3748/fff?text=React+Cert",
-    },
-    {
-      title: "JavaScript Algorithms and Data Structures",
-      provider: "freeCodeCamp",
-      link: "#",
-      imageUrl: "https://placehold.co/400x250/2d3748/fff?text=JS+Cert",
-    },
-    {
       title: "Responsive Web Design",
       provider: "freeCodeCamp",
       link: "#",
       imageUrl: "https://placehold.co/400x250/2d3748/fff?text=RWD+Cert",
     },
+    {
+      title: "Software Engineering and Agile software development",
+      provider: "Infosys Springboard",
+      link: "#",
+      imageUrl: "/Infosys_Agile.pdf",
+    },
+    {
+      title: " ECommerce & Tech Quiz of the Flipkart GRiD 6.0 - Software Development",
+      provider: "Flipkart",
+      link: "#",
+      imageUrl: "/Sharathflipkart.pdf",
+    },
+
   ];
 
   return (
