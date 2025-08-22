@@ -492,7 +492,7 @@ const Resume = () => (
         </p>
         <a
           href="/resume.pdf"
-          download="Sharath_Resume.pdf"
+          download="Resume.pdf"
           className="resume-btn"
         >
           📄 Download Resume
