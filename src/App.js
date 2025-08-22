@@ -488,7 +488,7 @@ const Resume = () => (
       <h2 className="section-title">My Resume</h2>
       <div className="resume-content">
         <p className="resume-text">
-          Download my full resume to learn more about my professional experience, skills, and projects.
+          View my full resume to discover more about my professional journey and achievements.
         </p>
         <a
           href="/resume.pdf"
